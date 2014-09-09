@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="layout" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <title>stjärnsvenska</title>
+    <meta name="description" content="stjärnsvenska">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- add styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bookshelf_slider.css" rel="stylesheet" type="text/css" />
+    <link href="css/skin01.css" rel="stylesheet" type="text/css"  />
+    <link href="css/normalize.css"rel="stylesheet" type="text/css"/>
+ 
+    <!-- add javascripts -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+    
+<body>
+    <header>
+        <div class="wrap">
+            <!-- logo -->
+            <a href="#!"><img class="logo" style="width: 162px;"src="images/nav-logo.png" /></a>
+            <!-- navigation menu -->
+             <nav>
+                
+                <ul>
+                    <li style="margin-right:0px"><a id="logoutbtn" class="active"  ng-click="ngclick()">Logout</a></li>
+                </ul>
+            </nav>
+
+               <nav style="padding-right: 521px"> 
+                   <ul id= "nav1">
+                    <li><a id="librbtn" href="#!/library" ng-class="{activeSmall:part == 'library'}" >Library</a></li>
+                    <li><a id="pagesbtn" href="#!/mypage" ng-class="{activeSmall:part == 'mypages'}">My Pages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <div style="position:relative">
+        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    </div>
+
+</body>
+</html>
