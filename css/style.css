@@ -636,11 +636,11 @@ button {
 }
 
 .shelf.wanted:before {
-    content: 'Upcoming books / wishlist';
+    content: 'Bibliotek';
 }
 
 .shelf.owned:before {
-    content: 'Bibliotek';
+    content: 'Recommonded';
 }
 
 .shelf:nth-child(3n).owned:before {
