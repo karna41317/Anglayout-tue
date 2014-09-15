@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="layout" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Script Tutorials" />
-    <title>stjärnsvenska</title>
-    <meta name="description" content="stjärnsvenska">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <!-- add styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/bookshelf_slider.css" rel="stylesheet" type="text/css" />
-    <link href="css/skin01.css" rel="stylesheet" type="text/css"  />
-    <link href="css/normalize.css"rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-       
- 
-    <!-- add javascripts -->
-    <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Script Tutorials" />
+        <title>stjärnsvenska</title>
+        <meta name="description" content="stjärnsvenska">
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+            <!-- add styles -->
+            <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--            <link href="css/bookshelf_slider.css" rel="stylesheet" type="text/css" />
+            <link href="css/skin01.css" rel="stylesheet" type="text/css"  />-->
+            <!--    <link href="css/normalize.css"rel="stylesheet" type="text/css"/>-->
+            <link rel="stylesheet" href ="bootstrap/css/bootstrap.css" type='text/css'>
+            <link rel="stylesheet" href ="bootstrap/css/bootstrap-theme.css" type='text/css'>
 
-</head>
-   
-<body>
-    
-    <header>
-        <div class="wrap">
-            <!-- logo -->
-            <a href="#!"><img class="logo" style="width: 162px;"src="images/nav-logo.png" /></a>
-            <!-- navigation menu -->
-             <nav>
-                <ul>
-                    <li style="margin-right:0px"><a id="logoutbtn" class="active"  ng-click="ngclick()">Logout</a></li>
-                </ul>
-            </nav>
 
-               <nav style="padding-right: 521px"> 
-                   <ul id= "nav1">
-                    <li><a id="librbtn" href="#!/library" ng-class="{activeSmall:part == 'library'}" >Library</a></li>
-                    <li><a id="pagesbtn" href="#!/mypages" ng-class="{activeSmall:part == 'mypages'}">My Pages</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                    <!-- add javascripts -->
+                    </head>
 
-    <!-- main content -->
-    <div style="position:relative">
-        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
-    </div>
+                    <body>
 
-</body>
-</html>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid" >
+                                    <img class= "brand" src="images/user_images/nav_logo.png"  alt="navlogo"/>
+<!--						<div class="brand">
+</div>-->
+
+			<button type="button" class="btn btn-danger pull-right" id="logOutBtn" data-tap="logOut(false)">Log Out</button>
+		</div>
+	</div>  
+</div>
+                        
+                                            
+<!--                            <div class="wrap">
+                                 logo 
+                                <img class=" logo" src="images/user_images/nav_logo.png" />
+                                 navigation menu 
+                                             <nav>
+                                                <ul>
+                                                    <li style="margin-right:0px"><a id="logoutbtn" class="active"  ng-click="ngclick()">Logout</a></li>
+                                                </ul>
+                                            </nav>
+                                
+                                               <nav style="padding-right: 521px"> 
+                                                   <ul id= "nav1">
+                                                    <li><a id="librbtn" href="#!/library" ng-class="{activeSmall:part == 'library'}" >Library</a></li>
+                                                    <li><a id="pagesbtn" href="#!/mypages" ng-class="{activeSmall:part == 'mypages'}">My Pages</a></li>
+                                                </ul>
+                                            </nav>
+
+
+                                <nav class="clearfix">
+                                    <ul class="clearfix">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">How-to</a></li>
+
+                                    </ul>
+                                    <a href="#" id="pull">Menu</a>
+                                </nav>
+                            </div>-->
+
+
+                     
+
+                        <!-- main content -->
+                        <div style="position:relative">
+                            <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+                        </div>
+                 
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+                        <script src="js/angular.min.js"></script>
+                        <script src="js/app.js"></script>
+                        <script src="js/controllers.js"></script>
+                        <script src="js/modernizr-2.6.2.min.js"></script>
+                    </body>
+
+                    </html>

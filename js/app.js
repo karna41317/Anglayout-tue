@@ -38,5 +38,14 @@ var app = angular.module('layout', [])
 
 app.config(['$locationProvider', function($location) {
         $location.hashPrefix('!');
-    }]);
+    }])
 
+.directive("navbar", function() {
+    return {
+        replace: true, 
+        templateUrl: "partials/directives/navbar.html", 
+        scope: {
+            logOut: "&"
+        }
+    };
+});
